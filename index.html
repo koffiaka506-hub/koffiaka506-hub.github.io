@@ -6,70 +6,152 @@
   <title>Portfolio - Koffi Aka</title>
 
   <style>
-    body {
-      font-family: Arial;
-      margin: 0;
-      background: #0f172a;
-      color: white;
-      text-align: center;
+    body{
+      margin:0;
+      font-family: Arial, sans-serif;
+      background:#0f172a;
+      color:white;
     }
 
-    header {
-      padding: 50px;
-      background: #1e293b;
+    /* NAVBAR */
+    nav{
+      display:flex;
+      justify-content:space-between;
+      padding:15px 30px;
+      background:#111827;
+      position:sticky;
+      top:0;
     }
 
-    h1 {
-      margin: 0;
-      color: #38bdf8;
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin:0 10px;
     }
 
-    .card {
-      background: #1e293b;
-      margin: 20px auto;
-      padding: 20px;
-      width: 80%;
-      border-radius: 10px;
+    nav a:hover{
+      color:#38bdf8;
     }
 
-    ul {
-      list-style: none;
-      padding: 0;
+    /* HERO */
+    .hero{
+      text-align:center;
+      padding:80px 20px;
     }
 
-    li {
-      padding: 5px;
+    .hero h1{
+      font-size:40px;
+      color:#38bdf8;
     }
 
-    a {
-      color: #38bdf8;
+    .hero p{
+      font-size:18px;
+      opacity:0.8;
+    }
+
+    /* SECTIONS */
+    section{
+      padding:50px 20px;
+      max-width:900px;
+      margin:auto;
+    }
+
+    .card{
+      background:#1e293b;
+      padding:20px;
+      border-radius:10px;
+      margin-top:20px;
+    }
+
+    .tag{
+      display:inline-block;
+      background:#38bdf8;
+      color:black;
+      padding:5px 10px;
+      border-radius:5px;
+      margin:5px;
+      font-size:12px;
+    }
+
+    footer{
+      text-align:center;
+      padding:20px;
+      background:#111827;
+      margin-top:50px;
+    }
+
+    a{
+      color:#38bdf8;
     }
   </style>
 </head>
 
 <body>
 
-<header>
+<!-- NAV -->
+<nav>
+  <div><b>Portfolio</b></div>
+  <div>
+    <a href="#about">À propos</a>
+    <a href="#projects">Projets</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
   <h1>Koffi Aka</h1>
-  <p>Développeur Web</p>
-</header>
-
-<div class="card">
-  <h2>🚀 Projet principal</h2>
-  <h3>GestionPro</h3>
-  <p>Application de gestion de stock et facturation</p>
-
-  <ul>
-    <li>📊 Dashboard</li>
-    <li>📦 Produits</li>
-    <li>👥 Clients</li>
-    <li>🧾 Factures</li>
-  </ul>
-
-  <a href="https://github.com/koffiaka506-hub/GestionPro">
-    Voir sur GitHub
-  </a>
+  <p>Développeur Web | Créateur d'applications modernes</p>
 </div>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2>👨‍💻 À propos</h2>
+  <p>
+    Je suis développeur web passionné par la création d’applications modernes et utiles.
+  </p>
+
+  <div>
+    <span class="tag">HTML</span>
+    <span class="tag">CSS</span>
+    <span class="tag">JavaScript</span>
+    <span class="tag">Spring Boot</span>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <h2>🚀 Projets</h2>
+
+  <div class="card">
+    <h3>GestionPro</h3>
+    <p>Application de gestion de stock et facturation.</p>
+
+    <ul>
+      <li>📊 Dashboard</li>
+      <li>📦 Produits</li>
+      <li>👥 Clients</li>
+      <li>🧾 Factures</li>
+    </ul>
+
+    <a href="https://github.com/koffiaka506-hub/GestionPro">
+      Voir le projet
+    </a>
+  </div>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>📩 Contact</h2>
+  <p>Email : tonemail@gmail.com</p>
+  <p>GitHub : https://github.com/koffiaka506-hub</p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  © 2026 - Koffi Aka
+</footer>
 
 </body>
 </html>
